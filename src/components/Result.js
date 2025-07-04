@@ -5,6 +5,8 @@ import {useEffect, useState} from "react";
 import { api_call_docsearch } from "./apidoc"
 
 
+
+
 function Result({ searchHistory = null, searchProcess = null, Docsearch = null, ids = null}) {
 
     const token = localStorage.getItem('accessToken');
@@ -50,6 +52,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
     // это отстаток ID для передачи для новых апи запросов
     const [remainingIds, setRemainingIds] = useState(ids || []);
 
+
 // следим за изменением ids
     useEffect(() => {
         setRemainingIds(ids || []);
@@ -67,6 +70,8 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
     const [loading, setLoading] = useState(false);
     // стейт каунтера
     const [startCounter, setStartCounter] = useState(0);
+    // стейт кнопки загрузки новых новостей
+    const [loadmore, setLoadmore] = useState(false);
 
     const showMoreArticles = () => {
         setdispArticles(prev => {
@@ -77,7 +82,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
             return newDispArticles;
         });
     };
-    //очищаем xml
+
     function decodeHtml(html) {
         const txt = document.createElement("textarea");
         txt.innerHTML = html;
@@ -126,9 +131,10 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                 setRemainingIds(remainingIds.slice(10));
             }
 
-
+            // Делаем запрос к API
             const data = await api_call_docsearch(idsToFetch);
 
+            // Добавляем новые статьи к уже загруженным
             loadArticles(data);
 
 
@@ -173,7 +179,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                     </div>
                 </div>
                 <div className="result_pic_woman">
-                    <img src="/img/woman.svg" alt="woman" width="100%" height="100%"/>
+                    <img src="img/woman.svg" alt="woman" width="100%" height="100%"/>
                 </div>
                 <div className="result_content_text_h3_cont">
                     <div className="result_content_text_h3">
@@ -185,7 +191,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                 </div>
                 <div className="result_maininfo_wrapper">
                     <button className="whyus-block__leftimage" aria-label="left" onClick={scrollLeft}>
-                        <img src="/img/chevron-left.png" width="39" height="39" alt="Left"/>
+                        <img src="img/chevron-left.png" width="39" height="39" alt="Left"/>
                     </button>
 
                     <div className="result_risk_scroll_leftblock">
@@ -203,7 +209,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                     {searchProcess && (
                         <div className="result_risk_scroll">
                             <div className="spinner">
-                                <img src="/img/spiner.svg" alt="spinner" width="100%" height="100%"/>
+                                <img src="img/spiner.svg" alt="spinner" width="100%" height="100%"/>
                             </div>
 
                             <div className="result_spinner_text">
@@ -237,7 +243,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                         </div>
                     )}
                         <button className="whyus-block__image_right1" aria-label="Scroll right" onClick={scrollRight}>
-                            <img src="/img/chevron-right.png" width="39" height="39" alt="Left"/>
+                            <img src="img/chevron-right.png" width="39" height="39" alt="Left"/>
                         </button>
 
                     </div>
