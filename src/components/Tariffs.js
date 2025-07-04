@@ -5,14 +5,14 @@ function Tariffs() {
         <>
             <div className="mainperson_image_block">
                 <div className="mainperson_image_image">
-                    <img src="img/person.png" width="100%" height="100%" alt="Main person"/>
+                    <img src="/img/person.png" width="100%" height="100%" alt="Main person"/>
                 </div>
                 <div className="mainperson_image_svg">
                     <div className="mainperson_image_svg1">
-                        <img src="img/main_img.svg" width="100%" height="100%" alt="Main person"/>
+                        <img src="/img/main_img.svg" width="100%" height="100%" alt="Main person"/>
                     </div>
                     <div className="mainperson_image_svg2">
-                        <img src="img/main_img_1.svg" width="100%" height="100%" alt="Main person"/>
+                        <img src="/img/main_img_1.svg" width="100%" height="100%" alt="Main person"/>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ function Tariffs() {
                             <div className="tarrifs-block__card__header_text">Beginner</div>
                             <div className="tarrifs-block__card__header_text1">Для небольшого исследования</div>
                             <div className="tarrifs-block__card__header_bulb_icon">
-                                <img src="img/bulb_icon.png" width="100%" height="100%" alt="Bulb icon"/>
+                                <img src="/img/bulb_icon.png" width="100%" height="100%" alt="Bulb icon"/>
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@ function Tariffs() {
                                 <div className="current_price_text">799 &#8381;</div>
                                 <div className="current_price_text1">1 200 &#8381; </div>
                                 <div className="current_price_icon">
-                                    <img src="img/rectangle_tarif.svg" width="134" height="24"
+                                    <img src="/img/rectangle_tarif.svg" width="134" height="24"
                                          alt="Current price icon"/>
                                     <div className="current_price_icon_text">
                                         Текущий тариф
@@ -53,21 +53,21 @@ function Tariffs() {
                                 В тариф входит:
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Безлимитная история запросов
                                 </div>
 
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Безопасная сделка
                                 </div>
 
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Поддержка 24/7
                                 </div>
@@ -78,7 +78,7 @@ function Tariffs() {
 
                             <div className="current_price_memberzone_btn1">
                                 <button className="current_price_memberzone_btn_text">
-                                    <img src="img/tarrif_btn_blue.png" width="100%" height="100%"
+                                    <img src="/img/tarrif_btn_blue.png" width="100%" height="100%"
                                          alt="Memberzone icon"/>
                                     <div className="current_price_icon_text_btn">
                                         Подробнее
@@ -99,7 +99,7 @@ function Tariffs() {
                             <div className="tarrifs-block__card__header_text">Pro</div>
                             <div className="tarrifs-block__card__header_text1">Для HR и фрилансеров</div>
                             <div className="tarrifs-block__card__header_bulb_icon">
-                                <img src="img/arrow_icon.png" width="93" height="103" alt="Bulb icon"/>
+                                <img src="/img/arrow_icon.png" width="93" height="103" alt="Bulb icon"/>
                             </div>
                         </div>
 
@@ -126,21 +126,21 @@ function Tariffs() {
                                 В тариф входит:
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Все пункты тарифа Beginner
                                 </div>
 
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Экспорт истории
                                 </div>
 
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Рекомендации по приоритетам
                                 </div>
@@ -149,7 +149,7 @@ function Tariffs() {
                             </div>
                             <div className="current_price_memberzone_btn1">
                                 <button className="current_price_memberzone_btn_text">
-                                    <img src="img/tarrif_btn_blue.png" width="100%" height="100%"
+                                    <img src="/img/tarrif_btn_blue.png" width="100%" height="100%"
                                          alt="Memberzone icon"/>
                                     <div className="current_price_icon_text_btn">
                                         Подробнее
@@ -172,7 +172,7 @@ function Tariffs() {
                                 корпоративных клиентов
                             </div>
                             <div className="tarrifs-block__card__header_bulb_icon">
-                                <img src="img/note_icon.png" width="93" height="103" alt="Bulb icon"/>
+                                <img src="/img/note_icon.png" width="93" height="103" alt="Bulb icon"/>
                             </div>
                         </div>
 
@@ -199,21 +199,21 @@ function Tariffs() {
                                 В тариф входит:
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Все пункты тарифа Pro
                                 </div>
 
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Безлимитное количество запросов
                                 </div>
 
                             </div>
                             <div className="current_price_text_ok_icon">
-                                <img src="img/ok_icon.png" width="20" height="20" alt="OK icon"/>
+                                <img src="/img/ok_icon.png" width="20" height="20" alt="OK icon"/>
                                 <div className="current_price_text_ok_text">
                                     Приоритетная поддержка
                                 </div>
@@ -222,7 +222,7 @@ function Tariffs() {
                             </div>
                             <div className="current_price_memberzone_btn2 current_price_memberzone_btn_margin">
                                 <button className="current_price_memberzone_btn_text">
-                                    <img src="img/tarrif_btn_blue.png" width="100%" height="100%"
+                                    <img src="/img/tarrif_btn_blue.png" width="100%" height="100%"
                                          alt="Memberzone icon"/>
                                     <div className="current_price_icon_text_btn">
                                         Подробнее

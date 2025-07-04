@@ -5,7 +5,7 @@ function Footer() {
         <>
             <footer>
                 <div className="scan_logo_footer">
-                    <img src="img/scan_logo_footer.png" alt="logo" width="100%" height="100%" alt="Company logo"/>
+                    <img src="/img/scan_logo_footer.png" alt="logo" width="100%" height="100%" alt="Company logo"/>
                 </div>
                 <div className="footer_text_cont">
                     г. Москва, Цветной б-р, 40<br/>

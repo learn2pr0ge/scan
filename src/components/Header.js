@@ -91,7 +91,7 @@ function Header({isAuthenticated}) {
                     <div className="divider"></div>
                     <button className="login-btn" onClick={ handleClick }><span>Войти</span></button> </div> ) }
 
-                { isAuthenticated && (<>
+                { isAuthenticated && data && (<>
                     <div className="header-reg-auth">
                     <div className="header-reg-auth-text"><p>Использовано компаний  <span style= {{fontSize: 14, color: '#000000', fontWeight: 'bold'}}>{data.usedCompanyCount}</span></p>
                         <p>Лимит по компаниям <span style= {{fontSize: 14, color: '#8AC540', fontWeight: 'bold'}}>{data.companyLimit}</span></p>

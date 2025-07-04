@@ -26,7 +26,7 @@ class Memberzone extends React.Component {
                     </div>
 
                     <div className="member_content_paper_pic">
-                        <img src="img/paper.svg" width="100%" height="100%" alt="paper pic"/>
+                        <img src="/img/paper.svg" width="100%" height="100%" alt="paper pic"/>
                     </div>
 
                     <form className="member_form" onSubmit={this.props.handleSubmit}>
@@ -125,13 +125,13 @@ class Memberzone extends React.Component {
 
                     </form>
                     <div className="member_content_folders">
-                        <img src="img/folders.svg" width="100%" height="100%" alt="folders pic"/>
+                        <img src="/img/folders.svg" width="100%" height="100%" alt="folders pic"/>
                     </div>
                     <div className="member_content_folders_pic">
-                        <img src="img/rocket.svg" width="100%" height="100%" alt="folders pic"/>
+                        <img src="/img/rocket.svg" width="100%" height="100%" alt="folders pic"/>
                     </div>
                     <div className="member_content_folders_pic_mobile">
-                        <img src="img/rocket.svg" width="100%" height="100%" alt="folders pic"/>
+                        <img src="/img/rocket.svg" width="100%" height="100%" alt="folders pic"/>
                     </div>
                 </div>
             </>

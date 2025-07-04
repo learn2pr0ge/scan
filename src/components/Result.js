@@ -49,7 +49,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
     const [dispArticles, setdispArticles] = useState(2);
     // это отстаток ID для передачи для новых апи запросов
     const [remainingIds, setRemainingIds] = useState(ids || []);
-    const location = useLocation();
+
 // следим за изменением ids
     useEffect(() => {
         setRemainingIds(ids || []);
@@ -173,7 +173,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                     </div>
                 </div>
                 <div className="result_pic_woman">
-                    <img src="img/woman.svg" alt="woman" width="100%" height="100%"/>
+                    <img src="/img/woman.svg" alt="woman" width="100%" height="100%"/>
                 </div>
                 <div className="result_content_text_h3_cont">
                     <div className="result_content_text_h3">
@@ -185,7 +185,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                 </div>
                 <div className="result_maininfo_wrapper">
                     <button className="whyus-block__leftimage" aria-label="left" onClick={scrollLeft}>
-                        <img src="img/chevron-left.png" width="39" height="39" alt="Left"/>
+                        <img src="/img/chevron-left.png" width="39" height="39" alt="Left"/>
                     </button>
 
                     <div className="result_risk_scroll_leftblock">
@@ -203,7 +203,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                     {searchProcess && (
                         <div className="result_risk_scroll">
                             <div className="spinner">
-                                <img src="img/spiner.svg" alt="spinner" width="100%" height="100%"/>
+                                <img src="/img/spiner.svg" alt="spinner" width="100%" height="100%"/>
                             </div>
 
                             <div className="result_spinner_text">
@@ -237,7 +237,7 @@ function Result({ searchHistory = null, searchProcess = null, Docsearch = null, 
                         </div>
                     )}
                         <button className="whyus-block__image_right1" aria-label="Scroll right" onClick={scrollRight}>
-                            <img src="img/chevron-right.png" width="39" height="39" alt="Left"/>
+                            <img src="/img/chevron-right.png" width="39" height="39" alt="Left"/>
                         </button>
 
                     </div>
